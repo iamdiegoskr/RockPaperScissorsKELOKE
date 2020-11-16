@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #19243d;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    width: 100%;
+    padding: 30px;
+    background: white;
+    text-align: center;
+}
+
+.header>h1 {
+    color: #19243d;
+    /* line-height: 100px; es una forma de centrar verticalmente */
+    letter-spacing: 5px;
+}
