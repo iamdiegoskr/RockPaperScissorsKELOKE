@@ -66,3 +66,11 @@ body {
     font-weight: bold;
     letter-spacing: 4px;
 }
+
+.result p {
+    text-align: center;
+    color: #FFf;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
