@@ -101,6 +101,7 @@ body {
 
 .choises>div:hover {
     bottom: 12px;
+    background: linear-gradient(29deg, rgb(57 56 100) 21%, rgba(0, 0, 0, 1) 95%);
 }
 
 .message-move {
