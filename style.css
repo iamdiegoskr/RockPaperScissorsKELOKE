@@ -32,6 +32,7 @@ body {
     margin: 40px auto;
     border: 2px solid #fff;
     border-radius: 6px;
+    box-shadow: 2px 2px 18px 2px rgb(165 42 42);
 }
 
 .score-board .badge {
@@ -39,7 +40,7 @@ body {
     height: auto;
     padding: 4px 6px;
     text-align: center;
-    background: #a52a2a;
+    background: #d51919;
     color: #fff;
     font-weight: bold;
     letter-spacing: 2px;
@@ -85,6 +86,7 @@ body {
 }
 
 .choises>div {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,4 +97,17 @@ body {
     margin-right: 16px;
     background: linear-gradient(29deg, rgba(165, 42, 42, 1) 21%, rgba(0, 0, 0, 1) 95%);
     cursor: pointer;
+}
+
+.choises>div:hover {
+    bottom: 12px;
+}
+
+.message-move {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 2px;
 }
