@@ -52,7 +52,7 @@ function win(userChoise, computerChoise) {
 
     userScore++;
     userScore_Span.innerHTML = userScore;
-    result_Div.innerHTML = `${converterLetterToWords(userChoise)} vence a ${converterLetterToWords(computerChoise)} <span class="result-span">GANASTE</span>`;
+    result_Div.innerHTML = `${converterLetterToWords(userChoise)} vence a ${converterLetterToWords(computerChoise)} <span class="result-span">GANASTE 🔥</span>`;
 
     printWin();
 }
@@ -61,13 +61,13 @@ function lose(userChoise, computerChoise) {
 
     computerScore++;
     computerScore_Span.innerHTML = computerScore;
-    result_Div.innerHTML = `${converterLetterToWords(userChoise)} pierde con ${converterLetterToWords(computerChoise)} <span class="result-span">PERDISTE!</span>`
+    result_Div.innerHTML = `${converterLetterToWords(userChoise)} pierde con ${converterLetterToWords(computerChoise)} <span class="result-span">PERDISTE 😥</span>`
 
     printLose();
 }
 
 function draw() {
-    result_Div.innerHTML = "EMPATE CARAJO!";
+    result_Div.innerHTML = "EMPATE CARAJO ⚔️";
 }
 
 function game(userChoice) {
