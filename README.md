@@ -1,4 +1,4 @@
-# Juego piedra papel y tijeras :tw-1f525:
+# Juego piedra papel y tijeras
 
 ![](https://i.imgur.com/lkISV1P.png)
 
