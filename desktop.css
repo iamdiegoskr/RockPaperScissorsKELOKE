@@ -28,7 +28,9 @@ body {
 
 .score-board {
     position: relative;
-    width: 350px;
+    width: 70%;
+    min-width: 220px;
+    max-width: 380px;
     height: 150px;
     margin: 30px auto;
     border: 2px solid #fff;
