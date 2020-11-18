@@ -70,7 +70,7 @@ function lose(userChoise, computerChoise) {
 
     computerScore++;
     computerScore_Span.innerHTML = computerScore;
-    result_Div.innerHTML = `${converterLetterToWords(userChoise)} pierde con ${converterLetterToWords(computerChoise)} <span class="result-span">PERDISTE 😥</span>`
+    result_Div.innerHTML = `${converterLetterToWords(computerChoise)} vence a ${converterLetterToWords(userChoise)} <span class="result-span">PERDISTE 😥</span>`
 
     optionsSelected(userChoise, computerChoise);
     printLose();
@@ -78,13 +78,13 @@ function lose(userChoise, computerChoise) {
 
 function draw(userChoise, computerChoise) {
     optionsSelected(userChoise, computerChoise);
-    result_Div.innerHTML = "EMPATE CARAJO ⚔️";
+    result_Div.innerHTML = "EMPATE ⚔️";
 }
 
 function game(userChoice) {
 
     const computerChoise = getComputerChoise();
-    // console.log(`user choise => ${userChoice} computer choise => ${computerChoise}`)
+
 
     switch (userChoice + computerChoise) {
         case 'rs':
