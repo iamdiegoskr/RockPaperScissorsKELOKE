@@ -5,13 +5,13 @@
 }
 
 body {
-    background-color: #19243d;
+    background-color: #000a20;
     font-family: 'Roboto', sans-serif;
 }
 
 .header {
     width: 100%;
-    padding: 30px;
+    padding: 20px;
     background: #a52a2a;
     text-align: center;
 }
@@ -29,7 +29,7 @@ body {
     position: relative;
     width: 350px;
     height: 150px;
-    margin: 40px auto;
+    margin: 30px auto;
     border: 2px solid #fff;
     border-radius: 6px;
     box-shadow: 2px 2px 18px 2px rgb(165 42 42);
@@ -71,7 +71,7 @@ body {
 .result p {
     text-align: center;
     color: #FFf;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: bold;
     letter-spacing: 2px;
     margin-bottom: 30px;
@@ -107,7 +107,7 @@ body {
 
 .message-move {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 26px;
     font-size: 24px;
     font-weight: 400;
     color: #fff;
@@ -141,4 +141,28 @@ body {
 
 .lose {
     color: #b00f0f;
+}
+
+.choises-board {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.choises-board>div {
+    width: 120px;
+    text-align: center;
+    color: #fff;
+}
+
+.board-tittle {
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.board-choise {
+    color: #9694d3;
+    letter-spacing: 1px;
+    font-weight: 500;
 }

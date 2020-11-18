@@ -14,6 +14,9 @@ const optionScissorDiv = document.getElementById('scissor');
 
 const buttonReset = document.getElementById("btn-reset");
 
+const userMove = document.getElementById("choise-user");
+const computerMove = document.getElementById("choise-computer");
+
 
 function getComputerChoise() {
     const choises = ['r', 'p', 's'];
@@ -48,12 +51,18 @@ function printLose() {
     result_span.classList.add("lose");
 }
 
+function optionsSelected(userOption, computerOption) {
+    userMove.innerHTML = converterLetterToWords(userOption);
+    computerMove.innerHTML = converterLetterToWords(computerOption);
+}
+
 function win(userChoise, computerChoise) {
 
     userScore++;
     userScore_Span.innerHTML = userScore;
     result_Div.innerHTML = `${converterLetterToWords(userChoise)} vence a ${converterLetterToWords(computerChoise)} <span class="result-span">GANASTE 🔥</span>`;
 
+    optionsSelected(userChoise, computerChoise);
     printWin();
 }
 
@@ -63,17 +72,19 @@ function lose(userChoise, computerChoise) {
     computerScore_Span.innerHTML = computerScore;
     result_Div.innerHTML = `${converterLetterToWords(userChoise)} pierde con ${converterLetterToWords(computerChoise)} <span class="result-span">PERDISTE 😥</span>`
 
+    optionsSelected(userChoise, computerChoise);
     printLose();
 }
 
-function draw() {
+function draw(userChoise, computerChoise) {
+    optionsSelected(userChoise, computerChoise);
     result_Div.innerHTML = "EMPATE CARAJO ⚔️";
 }
 
 function game(userChoice) {
 
     const computerChoise = getComputerChoise();
-    console.log(`user choise => ${userChoice} computer choise => ${computerChoise}`)
+    // console.log(`user choise => ${userChoice} computer choise => ${computerChoise}`)
 
     switch (userChoice + computerChoise) {
         case 'rs':
@@ -100,7 +111,9 @@ function resetGame() {
     computerScore = 0;
     userScore_Span.innerHTML = userScore;
     computerScore_Span.innerHTML = computerScore;
-    result_Div.innerHTML = `<p>Listo para jugar ? <span>DIVIERTETE</span></p>`
+    result_Div.innerHTML = `<p>Listo para jugar ? <span>DIVIERTETE</span></p>`;
+    userMove.innerHTML = "Jugada";
+    computerMove.innerHTML = "Jugada";
 }
 
 function main() {
